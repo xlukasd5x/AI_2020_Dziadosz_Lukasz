@@ -14,5 +14,18 @@ require "header.php"
 	  </form>
 	  </div>
 	  </div>
+	  <?php
+		 if (isset($_GET['error'])) {
+			 if ($_GET['error'] == "emptyfields") {
+				 echo '<p style="font-size:20px">Wypełnij wszystkie pola</p>';
+			 }
+			 if ($_GET['error'] == "nouser") {
+				echo '<p style="font-size:20px">Brak takiego użytkownika</p>';
+			}
+			if ($_GET['error'] == "wrongpwd") {
+				echo '<p style="font-size:20px">Złe hasło</p>';
+			}
+		}
+			 ?>
 	  </div>
-		</div>
+	  </div>

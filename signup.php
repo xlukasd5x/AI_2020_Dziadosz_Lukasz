@@ -25,19 +25,19 @@
 				 echo '<p style="font-size:20px">Wypełnij wszystkie pola</p>';
 			 }
 			 else if ($_GET['error'] == "invaliduidmail") {
-				 echo '<p>Niewłaściwa nazwa i mail</p>';
+				 echo '<p style="font-size:20px">Niewłaściwa nazwa i mail</p>';
 			 }
 			 else if ($_GET['error'] == "invaliduid") {
-				 echo '<p>Niewłaściwa nazwa</p>';
+				 echo '<p style="font-size:20px">Niewłaściwa nazwa</p>';
 			 }
 			 else if ($_GET['error'] == "invalidmail") {
-				 echo '<p>Niewłaściwy mail</p>';
+				 echo '<p style="font-size:20px">Niewłaściwy mail</p>';
 			 }
 			 else if ($_GET['error'] == "passwordcheck") {
-				 echo '<p>Twoje hasła nie pasują</p>';
+				 echo '<p style="font-size:20px">Twoje hasła nie pasują</p>';
 			 }
 			 else if ($_GET['error'] == "usertaken") {
-				 echo '<p>Nazwa jest zajęta</p>';
+				 echo '<p style="font-size:20px">Nazwa jest zajęta</p>';
 			 }
 		 }
 		 if (isset($_GET['signup'])){
