@@ -39,7 +39,5 @@ session_start();
             </form>
 		</div>
 	</div>
-</div>
-<form action="includes/logout.inc.php" method="post">
-		 <button type="submit" name="logout-submit">Logout</button>
-	  </form>
+<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.9885259316393!2d22.013391215884763!3d50.03031082542907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cfaf83c5a9833%3A0x432f7dd9b86f7a01!2sUniwersytet%20Rzeszowski!5e0!3m2!1spl!2spl!4v1589833467475!5m2!1spl!2spl" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
+
