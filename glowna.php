@@ -31,7 +31,7 @@ session_start();
 				<li><a href="glowna.php">Strona główna</a></li>
 				<li><a href="#">Wynajmij</a></li>
                 <li><a href="onas.php">O nas</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="kontakt.php">Kontakt</a></li>
                 <form action="includes/logout.inc.php" method="post">
 		        <button type="submit" name="logout-submit">Wyloguj</button>
                 </form>
@@ -84,3 +84,6 @@ session_start();
 	<li><strong>Leżajsk: </strong>miasto w Polsce, w północnej części województwa podkarpackiego, siedziba powiatu leżajskiego. Leży w dolinie Sanu, na skraju dawnej Puszczy Sandomierskiej, w dawnej ziemi przemyskiej.</li>
 	</ul>
 </div>
+<?php
+require "footer.php";
+?>
