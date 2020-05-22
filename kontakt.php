@@ -29,7 +29,7 @@ session_start();
         <form action="includes/logout.inc.php" method="post">
 			<ul>
 				<li><a href="glowna.php">Strona główna</a></li>
-				<li><a href="#">Wynajmij</a></li>
+				<li><a href="wynajmij.php">Wynajmij</a></li>
                 <li><a href="onas.php">O nas</a></li>
                 <li><a href="kontakt.php">Kontakt</a></li>
                 <form action="includes/logout.inc.php" method="post">
