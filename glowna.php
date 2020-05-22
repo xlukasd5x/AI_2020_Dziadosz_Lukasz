@@ -13,7 +13,7 @@ session_start();
 	<div id="header-wrapper">
 		<div id="header" class="container">
 			<div id="logo">
-				<h1><a href="index.php">Szybkie auta</a></h1>
+				<h1><a href="glowna.php">Szybkie auta</a></h1>
 				<p>Design by Łukasz Dziadosz</a></p>
 	  </div>
 	  <div id="social">

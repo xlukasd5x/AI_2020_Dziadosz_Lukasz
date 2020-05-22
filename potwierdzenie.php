@@ -40,24 +40,16 @@ session_start();
 		</div>
 	</div>
 </div>
-
 <?php
-$polaczenie = new mysqli('localhost', 'root', '', 'apka');
-if (!$polaczenie) {
-    die('Could not connect: ' . mysql_error());
-}
-$wynik = mysqli_query($polaczenie, "SELECT * FROM auta WHERE 1");
-while ($row = mysqli_fetch_array($wynik)) {
-	echo "<article style=text-align:center><form action=potwierdzenie.php method=post>";
-	echo "<img src=". $row['img'] ." >";
-	echo " ". $row['Marka'] ."";
-	echo " " . $row['Model'] . ""; 	
-	echo " " . $row['Cena'] . " "; 
-	echo "<input type=hidden name=id_auta value=$row[id_auta]>";
-	echo "<input type=hidden name=img value=$row[img]>";
-	echo "<input type=hidden name=Marka value=$row[Marka]>";
-	echo "<input type=hidden name=Model value=$row[Model]>";
-	echo "<input type=hidden name=Cena value=$row[Cena]>";
-	echo "<button class='dodaj' value=cos type=submit><span>Wypożycz </span></button></form></article>";	
-}
+$id_auta = $_POST['id_auta'];
+echo $id_auta;
+$img = $_POST['img'];
+echo "<img src=$img >";
+$Marka = $_POST['Marka'];
+echo $Marka;
+$Model = $_POST['Model'];
+echo $Model;
+$Cena = $_POST['Cena'];
+echo $Cena;
+echo "<form action=platnosc.php method=post> <button>Zaplać</button> </form>"
 ?>
