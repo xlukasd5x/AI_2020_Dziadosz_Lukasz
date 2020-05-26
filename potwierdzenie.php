@@ -51,5 +51,15 @@ $Model = $_POST['Model'];
 echo $Model;
 $Cena = $_POST['Cena'];
 echo $Cena;
-echo "<form action=platnosc.php method=post> <button>Zaplać</button> </form>"
+echo $imie = "";
+echo $adres = '';
+echo $telefon = '';
+echo "<form action=pdf.php method=post>";
+echo "<input type=hidden name=Marka value=$Marka>";
+echo "<input type=hidden name=Model value=$Model>";
+echo "<input type=hidden name=Cena value=$Cena>";
+echo "<p><input type=text name=imie  placeholder=Imie placeholder=Imie value=$imie></p>";
+echo "<p><input type=text name=adres placeholder=Adres value=$adres></p>";
+echo "<p><input type=number name=telefon placeholder=Telefon value=$telefon></p>";
+echo "<button>Zapłać</button> </form>";
 ?>
