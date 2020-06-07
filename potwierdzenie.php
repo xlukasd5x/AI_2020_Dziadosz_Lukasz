@@ -40,17 +40,19 @@ session_start();
 		</div>
 	</div>
 </div>
+<h5 style="font-size:26px;text-align:center">Czy zamówienie się zgadza?</h5>
 <?php
-$id_auta = $_POST['id_auta'];
-echo $id_auta;
 $img = $_POST['img'];
-echo "<img src=$img >";
 $Marka = $_POST['Marka'];
-echo $Marka;
 $Model = $_POST['Model'];
-echo $Model;
+$Przebieg = $_POST['Przebieg'];
 $Cena = $_POST['Cena'];
-echo $Cena;
+echo "<article style=text-align:center>";
+echo "<img src=". $img ." >";
+echo "<p><a style=font-size:20px> ". $Marka ." ";
+echo "" . $Model . "<br> "; 	
+echo "Przebieg samochodu: " . $Przebieg . " km<br>"; 
+echo "Cena: " . $Cena . "zł</p>"; 
 echo $imie = "";
 echo $adres = '';
 echo $telefon = '';
@@ -58,8 +60,9 @@ echo "<form action=pdf.php method=post>";
 echo "<input type=hidden name=Marka value=$Marka>";
 echo "<input type=hidden name=Model value=$Model>";
 echo "<input type=hidden name=Cena value=$Cena>";
-echo "<p><input type=text name=imie  placeholder=Imie placeholder=Imie value=$imie></p>";
-echo "<p><input type=text name=adres placeholder=Adres value=$adres></p>";
-echo "<p><input type=number name=telefon placeholder=Telefon value=$telefon></p>";
-echo "<button>Zapłać</button> </form>";
+echo "<h5 style=font-size:20px text-align:center>Wpisz swoje dane:</h5>";
+echo "<p><input style=text-align:center type=text name=imie  placeholder=Imie placeholder=Imie value=$imie>";
+echo "  <input style=text-align:center type=text name=adres placeholder=Adres value=$adres>  ";
+echo "<input style=text-align:center type=text name=telefon placeholder=Telefon value=$telefon></p>";
+echo "<button>Zapłać</button></article></form>";
 ?>

@@ -40,6 +40,7 @@ session_start();
 		</div>
 	</div>
 </div>
+<h5 style="text-align:center;font-size:25px">Znajdź swoje auto</h5>
 
 <?php
 $polaczenie = new mysqli('localhost', 'root', '', 'apka');
@@ -48,16 +49,24 @@ if (!$polaczenie) {
 }
 $wynik = mysqli_query($polaczenie, "SELECT * FROM auta WHERE 1");
 while ($row = mysqli_fetch_array($wynik)) {
-	echo "<article style=text-align:center><form action=potwierdzenie.php method=post>";
+	echo "<article class=wynajmij style=text-align:center><form action=potwierdzenie.php method=post>";
 	echo "<img src=". $row['img'] ." >";
-	echo " ". $row['Marka'] ."";
-	echo " " . $row['Model'] . ""; 	
-	echo " " . $row['Cena'] . " "; 
+	echo "<p><a style=font-size:20px> ". $row['Marka'] ." ";
+	echo "" . $row['Model'] . "<br> "; 	
+	echo "Przebieg samochodu: " . $row['Przebieg'] . " km<br>"; 
+	echo "Cena: " . $row['Cena'] . "zł</p>"; 
 	echo "<input type=hidden name=id_auta value=$row[id_auta]>";
 	echo "<input type=hidden name=img value=$row[img]>";
 	echo "<input type=hidden name=Marka value=$row[Marka]>";
 	echo "<input type=hidden name=Model value=$row[Model]>";
+	echo "<input type=hidden name=Przebieg value=$row[Przebieg]>";
 	echo "<input type=hidden name=Cena value=$row[Cena]>";
-	echo "<button class='dodaj' value=cos type=submit><span>Wypożycz </span></button></form></article>";	
+	echo "<button class='dodaj' value=cos type=submit><span>Wypożycz</span></button></form></article>";
 }
 ?>
+<style>
+.wynajmij{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+</style>
