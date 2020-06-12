@@ -26,17 +26,13 @@ session_start();
 			</div>
     </div>
 		<div id="menu" class="container">
-        <form action="includes/logout.inc.php" method="post">
 			<ul>
 				<li><a href="glowna.php">Strona główna</a></li>
 				<li><a href="wynajmij.php">Wynajmij</a></li>
                 <li><a href="onas.php">O nas</a></li>
                 <li><a href="kontakt.php">Kontakt</a></li>
-                <form action="includes/logout.inc.php" method="post">
-		        <button type="submit" name="logout-submit">Wyloguj</button>
-                </form>
+		        <li><a href="includes/logout.inc.php">Wyloguj</a></li> 
             </ul>
-            </form>
 		</div>
 	</div>
     <h4 style="text-align:center;font-size:26px;margin:0;padding-top:26px">Skontaktuj się z nami!</h4>

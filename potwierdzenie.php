@@ -49,7 +49,7 @@ $Przebieg = $_POST['Przebieg'];
 $Cena = $_POST['Cena'];
 echo "<article style=text-align:center>";
 echo "<img src=". $img ." >";
-echo "<p><a style=font-size:20px> ". $Marka ." ";
+echo "<p><a class=tekst style=font-size:20px;font-family:'Roboto'>Samochód: ". $Marka ." ";
 echo "" . $Model . "<br> "; 	
 echo "Przebieg samochodu: " . $Przebieg . " km<br>"; 
 echo "Cena: " . $Cena . "zł</p>"; 
@@ -64,5 +64,8 @@ echo "<h5 style=font-size:20px text-align:center>Wpisz swoje dane:</h5>";
 echo "<p><input style=text-align:center type=text name=imie  placeholder=Imie placeholder=Imie value=$imie>";
 echo "  <input style=text-align:center type=text name=adres placeholder=Adres value=$adres>  ";
 echo "<input style=text-align:center type=text name=telefon placeholder=Telefon value=$telefon></p>";
-echo "<button>Zapłać</button></article></form>";
+echo "<button>Zapłać</button></article></form></br>";
+?>
+    <?php
+require "footer.php";
 ?>
